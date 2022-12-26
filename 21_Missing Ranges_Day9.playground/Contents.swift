@@ -1,4 +1,4 @@
-//MARK: - Convert Sorted Array to Binary Search Tree
+//MARK: - Missing Ranges
 
 // Link: https://leetcode.com/problems/missing-ranges/
 // Given aa sorted integer array nums, where the range of elements are in the inclusive range[lower, upper], return its missing ranges.
