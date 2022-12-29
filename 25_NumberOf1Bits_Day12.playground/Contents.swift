@@ -25,8 +25,9 @@
 //MARK: - Code
 
 class Solution {
-    func reverseBits(_ n: Int) -> Int {
-        var n = n, count = 0
+    func hammingWeight(_ n: Int) -> Int {
+        var n = n
+        var count = 0
         while n > 0 {
             n &= (n - 1)
             count += 1
@@ -41,12 +42,12 @@ class Solution {
 let solution = Solution()
 //1.
 var input1 = 11 // 00000000000000000000000000001011
-solution.reverseBits(input1) // 3
+solution.hammingWeight(input1) // 3
 
 //2.
 var input2 = 128 // 00000000000000000000000010000000
-solution.reverseBits(input2) // 1
+solution.hammingWeight(input2) // 1
 
 //3.
 var input3 = 4294967293 // 11111111111111111111111111111101
-solution.reverseBits(input3) // 31
+solution.hammingWeight(input3) // 31
