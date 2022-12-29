@@ -6,6 +6,7 @@
 
 //MARK: - Approach
 
+// Idea: n the binary representation, the least significant 1-bit in n always corresponds to a 0-bit in n−1. Therefore, 'AND'ing the two numbers n and n−1 always flips the least significant 1-bit in n to 0, and keeps all other bits the same.
 //1. Maintain a count variable initialized to '0'.
 //2. Iterate until 'n' becomes 0.
 //3. Assign 'n' by 'AND'ing n with n - 1 for each iteration and increment the count.
